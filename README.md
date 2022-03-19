@@ -11,7 +11,7 @@ This module presented the way to create an interactive map to show earthquake ac
 - D2: Add Major Earthquake Data
 - D3: Add an Additional Map
 
-![JC_Mapping_Earthquakes](/__Resources/img0.png)
+![JC_Mapping_Earthquakes](/__Resources/img7.png)
 
 # Resources:
  
@@ -63,5 +63,7 @@ And these buttons are not limited to the above, but also allow to change the lay
 3. Dark view
 
 There are popup markers containing the information concerning the location and magnitude for each earthquakes. The marker features (color and diameter) are equivalent to the earthquake force, the stronger, the larger and darker the marker. Plus there is a legend providing context to the map.
+
+![PopUp Markers](/__Resources/img8.png)
 
 People call me JC, the short for [Juanita C. Nunez](https://www.linkedin.com/in/juanitacamargonunez/). Contact me for any questions! I love networking, so here you go  my [LinkedIn] (https://www.linkedin.com/in/juanitacamargonunez/) :)

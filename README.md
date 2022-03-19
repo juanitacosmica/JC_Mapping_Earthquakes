@@ -1,66 +1,67 @@
-# JC_UFOs
+# JC_Mapping_Earthquakes
 Module 13: Mapping Earthquakes with JS & APIs
 
 # Overview of the analysis:
 
-This UFO Sightings webpage intends to show through a dynamic table an in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time: date, city, state, country, and shape.
+This module presented the way to create an interactive map to show earthquake activities around the world for certain given cities. Maps allow us to explore, understand and make decisions about our world. Our clients, Basil and Sadhana wanted to see the earthquake data in relation to the tectonic plates’ location on the earth, and they needed to see all the earthquakes with a magnitude greater than 4.5 on the map.
 
-1 part is accomplished through this analysis:
+3 parts are accomplished through this analysis and the script is available in [Earthquake_Challenge Folder](https://github.com/juanitacosmica/JC_Mapping_Earthquakes/tree/main/Earthquake_Challenge):
 
-- D1: Filter UFO sightings on multiple criteria
+- D1: Add Tectonic Plate Data
+- D2: Add Major Earthquake Data
+- D3: Add an Additional Map
+
+![JC_Mapping_Earthquakes](/__Resources/img0.png)
 
 # Resources:
  
- **Data source** All data used and queries used in this analysis are available in the [Static Folder](https://github.com/juanitacosmica/JC_UFOs/static)
+ **Data source** All data used and queries used in this analysis are available in the [Static Folders](https://github.com/juanitacosmica/JC_Mapping_Earthquakes)
 
-  **Software** JavaScript, HTML, CSS, Bootstrap3.
+  **Software** JavaScript (80.5%), HTML (17.6%), CSS (1.9%), JSON, D3, Leaflet
 
 
 # Results:
 
-We are showcasing a table with the data fetched from the [data.js](https://github.com/juanitacosmica/JC_UFOs/static/js) once the user filters for:
+When switching through the buttons we get the following 6 different options:
 
-- Date
-- City
-- State
-- Country
-- Shape
+1. Streets View only:
 
-As shown in the image below, we also give the user an example on what format to use when entering the data to filter for:
+![Streets Map](/__Resources/img1.png)
 
-![Filters](/Resources/D1_img1.png)
+2. Satellite View only:
 
-After the user inputs the parameters, the table will show the data accordingly:
+![Satellite Map](/__Resources/img2.png)
 
-![Fetched Data](/Resources/D1_img2.png)
+3. Dark View only:
 
-When we want to filter for different data, the user can either delete and re-enter whatever parmeters, or refresh the webpage, or click on the top left corner on "UFO Sightings" and the filters will be cleared out and ready for another use!
+![Dark Map](/__Resources/img3.png)
 
-![Clear Filters Hack](/Resources/D1_img3.png)
+4. Streets View and Earthquakes
 
-To make all this possible, we updated the code in the [index.html file](https://github.com/juanitacosmica/JC_UFOs) to create more table filters, for: date, city, state, country, and shape (also removed the Filter Table button):
+![Earthquakes](/__Resources/img4.png)
 
-![Show Html Filters Script](/Resources/D1_img4.png)
+5. Streets View and Tectonic Plates
 
-And using JavaScript, we used a function in the [app.js file](https://github.com/juanitacosmica/JC_UFOs/static/js) to save the element, value, and id of the filter that was changed. Also we created a new function to loop through the dataset to keep only the results that match the user search criteria. The webpage will be updated with the search criteria after pressing "Enter".
+![Tectonic Plates](/__Resources/img5.png)
 
-![Show JavaScript1](/Resources/D1_img5.png)
-![Show JavaScript2](/Resources/D1_img6.png)
+6. Streets View and Major Earthquakes
 
-All script screenshots results are avaialble for viewing on the [Resources Folder](https://github.com/juanitacosmica/JC_UFOs/Resources).
+![Major Earthquakes](/__Resources/img6.png)
+
+All script screenshots results are available for viewing in the [Resources Folder](https://github.com/juanitacosmica/JC_Mapping_Earthquakes/__Resources).
 
 # Summary:
 
-Being able to create a webpage to have user inputting parameters to fetch data and visuallize it in tables is a big step forward. For this particular challenge building the HTML using bootstrap and styling and also being able to add an image was very interesting. 2 things to point out:
+The interaction in the maps are actioned to show the following:
+1. Tectonic plates
+2. Last 7 days earthquakes
+3. Major earthquakes with magnitude greater than 4.5
 
-## Drawback:
+And these buttons are not limited to the above, but also allow to change the layouts to: 
+1. Street view
+2. Satellite view
+3. Dark view
 
-  1. For the reset button instead of being located up above where the user would not even notice it while being down looking at the filters and table with data, should be under the filtering table; also, the Filter Table Button was quite nicer to have instead of being removed.
-
-## Recommendations:
-
-  1. Having drop-down menus in case the users do not know the options, ie. what if they come to search for UFO data in other countries but this is only fetching for the US? Easier if upfront they see what is available from a drop down menu.
-
-  2. Adding a button for the user to manipulate the styling of the webpage would be fun, this styling was a Dark mode type of view, but having a button to turn it into a lighter mode should be good too!
+There are popup markers containing the information concerning the location and magnitude for each earthquakes. The marker features (color and diameter) are equivalent to the earthquake force, the stronger, the larger and darker the marker. Plus there is a legend providing context to the map.
 
 People call me JC, the short for [Juanita C. Nunez](https://www.linkedin.com/in/juanitacamargonunez/). Contact me for any questions! I love networking, so here you go  my [LinkedIn] (https://www.linkedin.com/in/juanitacamargonunez/) :)
